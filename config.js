@@ -17,6 +17,6 @@ window.SITE_CONFIG = {
     youtube: 'https://www.youtube.com/@FinalStep-s2e',
     github: 'https://github.com/finalsteppath-code',
     facebook: null,
-    linkedin: null
+    linkedin: 'https://www.linkedin.com/company/%D8%A7%D8%AE%D8%B1step/home/'
   }
 };
