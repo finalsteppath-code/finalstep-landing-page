@@ -51,7 +51,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="#home" class="brand" aria-label="العودة إلى الصفحة الرئيسية">
-          <img src="assets/logo/Profile picture · name · 1080×1080@1x.png" alt="شعار Final Step" class="brand-mark" />
+          <img src="assets/logo/watermark-final-step (1).png" alt="" class="brand-mark" />
           <div class="brand-text">
             <span class="brand-title">Final Step</span>
             <span class="brand-subtitle">آخر خطوة</span>
@@ -62,18 +62,21 @@
           <span></span><span></span><span></span>
         </button>
 
-        <nav id="site-nav" class="site-nav" aria-label="القائمة الرئيسية">
-          <a href="#home">Home</a>
+        <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+          <a href="#home" class="active">Accueil</a>
           <a href="#services">Services</a>
-          <a href="#tech-stack">Tech Stack</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#career-support">Career Support</a>
-          <a href="#faq">FAQ</a>
+          <a href="#tech-stack">Technologies</a>
+          <a href="#how-it-works">Fonctionnement</a>
+          <a href="#career-support">À propos</a>
           <a href="#contact">Contact</a>
-          <a href="#projects">Testimonial</a>
         </nav>
 
         <a href="" class="btn btn-primary header-cta" target="_blank" rel="noopener noreferrer">احكيلنا على مشروعك</a>
+        <div class="language-switcher" aria-label="Choisir la langue">
+          <button type="button" class="language-button" data-language="ar" aria-pressed="false">AR</button>
+          <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+          <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </header>
 
@@ -81,11 +84,11 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">PFE PACK · MADE FOR YOUR NEXT STEP</span>
+            <span class="eyebrow hero-badge"><span class="badge-dot" aria-hidden="true"></span><bdi>PFE PACK · MADE FOR YOUR NEXT STEP</bdi></span>
             <h1>
-              عندك <span class="text-accent">PFE</span> ومش عارف <span class="text-accent">منين تبدأ؟</span>
+              عندك <bdi>PFE</bdi> ومش عارف <span class="text-accent">منين تبدأ؟</span>
             </h1>
-            <p class="lead">من الفكرة للـ <bdi>soutenance</bdi>، Final Step معاك خطوة بخطوة.</p>
+            <p class="lead">من الفكرة للـ <bdi>soutenance</bdi>، <bdi>Final Step</bdi> معاك خطوة بخطوة.</p>
             <p class="description">
               نعاونـوك في <bdi>conception</bdi>، <bdi>développement</bdi>، <bdi>documentation</bdi>، والتحضير للمناقشة.
             </p>
@@ -93,21 +96,24 @@
               <a href="" class="btn btn-primary hero-primary" target="_blank" rel="noopener noreferrer">احكيلنا على مشروعك</a>
               <a href="#services" class="btn btn-secondary">اكتشف الخدمات</a>
             </div>
+            <!-- NEEDS REVIEW: Darja copy -->
+            <p class="hero-microcopy">يبدا جانفي 2027 · أونلاين · قفصة، تونس</p>
           </div>
 
           <div class="hero-visual" aria-label="illustration Final Step">
-            <img
-              src="assets/hero/hero1.jfif"
-              alt="illustration de Final Step pour le parcours PFE"
-              class="hero-image"
-              width="620"
-              height="520"
-            />
+            <div class="hero-image-wrap">
+              <img
+                src="assets/hero/hero1.jfif"
+                alt="illustration de Final Step pour le parcours PFE"
+                class="hero-image"
+                width="620"
+                height="520"
+              />
+            </div>
           </div>
         </div>
 
-        <div class="trust-strip" aria-label="avantages de Final Step">
-          <div class="container">
+        <div class="trust-strip container" aria-label="avantages de Final Step">
             <ul class="trust-card" aria-label="Points forts du programme">
               <li>
                 <span class="trust-item-icon" aria-hidden="true">
@@ -150,7 +156,6 @@
                 <span class="trust-item-copy">نفهم كل خطوة</span>
               </li>
             </ul>
-          </div>
         </div>
       </section>
 
@@ -164,73 +169,73 @@
           <div class="services-grid">
             <article class="service-card">
               <div class="icon-tile">01</div>
-              <h3>Project Analysis &amp; Design</h3>
-              <p>تحليل فكرة PFE، المتطلبات، معمارية التطبيق، قاعدة البيانات، UX/UI، wireframes وmockups.</p>
+              <h3>Analyse et conception du projet</h3>
+              <p>Analyse de l’idée du <bdi>PFE</bdi>, des besoins, de l’architecture de l’application, de la base de données, de l’<bdi>UX/UI</bdi>, des <bdi>wireframes</bdi> et des <bdi>mockups</bdi>.</p>
               <ul>
-                <li>تحليل الفكرة</li>
-                <li>تصميم التطبيق</li>
-                <li>خطة التنفيذ</li>
+                <li>Analyse de l’idée</li>
+                <li>Conception de l’application</li>
+                <li>Plan d’exécution</li>
               </ul>
             </article>
 
             <article class="service-card">
               <div class="icon-tile">02</div>
-              <h3>Web &amp; Mobile Development</h3>
-              <p>React.js، Node.js/Express.js، PostgreSQL وReact Native عند الحاجة، مع تكامل AI عند الملاءمة.</p>
+              <h3>Développement web et mobile</h3>
+              <p><bdi>React.js</bdi>, <bdi>Node.js/Express.js</bdi>, <bdi>PostgreSQL</bdi> et <bdi>React Native</bdi> selon les besoins, avec intégration de l’<bdi>AI</bdi> lorsque cela est pertinent.</p>
               <ul>
-                <li>React.js / Node.js</li>
-                <li>API &amp; DB</li>
-                <li>مواكبة تقنية</li>
+                <li><bdi>React.js</bdi> / <bdi>Node.js</bdi></li>
+                <li><bdi>API</bdi> et <bdi>DB</bdi></li>
+                <li>Accompagnement technique</li>
               </ul>
             </article>
 
             <article class="service-card">
               <div class="icon-tile">03</div>
-              <h3>Implementation &amp; Technical Support</h3>
-              <p>إعداد المشروع، قوالب البداية، دعم البرمجة، اختبار وتصحيح الأخطاء أثناء التطوير.</p>
+              <h3>Mise en œuvre et support technique</h3>
+              <p>Mise en place du projet, modèles de démarrage, accompagnement en programmation, tests et correction des erreurs pendant le développement.</p>
               <ul>
-                <li>setup فني</li>
-                <li>debugging</li>
-                <li>دعم مستمر</li>
+                <li>Configuration technique</li>
+                <li>Débogage</li>
+                <li>Support continu</li>
               </ul>
             </article>
 
             <article class="service-card">
               <div class="icon-tile">04</div>
-              <h3>Report &amp; Documentation</h3>
-              <p>هيكلة التقرير، كتابة الوثائق، مخططات فنية، مراجعة وإعادة صياغة ما يلزم.</p>
+              <h3>Rapport et documentation</h3>
+              <p>Structuration du rapport, rédaction de la documentation, schémas techniques, révision et reformulation selon les besoins.</p>
               <ul>
-                <li>هيكلة التقرير</li>
-                <li>diagramme</li>
-                <li>مراجعة كتابة</li>
+                <li>Structure du rapport</li>
+                <li>Diagrammes</li>
+                <li>Révision rédactionnelle</li>
               </ul>
             </article>
 
             <article class="service-card">
               <div class="icon-tile">05</div>
-              <h3>Final Presentation &amp; Defense</h3>
-              <p>شرائح العرض، تجهيز العرض التوضيحي، تمرين المناقشة والتأهيل للمحاكمة النهائية.</p>
+              <h3>Présentation finale et soutenance</h3>
+              <p>Diapositives de présentation, préparation de la démonstration, entraînement à la soutenance et préparation à la soutenance finale.</p>
               <ul>
-                <li>slides</li>
-                <li>demo prep</li>
-                <li>ممارسة المناقشة</li>
+                <li>Préparation des diapositives</li>
+                <li>Préparation de la démonstration</li>
+                <li>Entraînement à la soutenance</li>
               </ul>
             </article>
 
             <article class="service-card featured">
-              <div class="tag">FREE BONUS</div>
+              <div class="tag">BONUS GRATUIT</div>
               <div class="icon-tile">06</div>
-              <h3>Free Career Support</h3>
-              <p>دورات مجانية حول LinkedIn، CV، portfolio، والبحث عن شغل عبر Indeed.</p>
+              <h3>Accompagnement professionnel gratuit</h3>
+              <p>Sessions gratuites autour de <bdi>LinkedIn</bdi>, du <bdi>CV</bdi>, du <bdi>portfolio</bdi> et de la recherche d’emploi via <bdi>Indeed</bdi>.</p>
               <ul>
-                <li>LinkedIn</li>
-                <li>CV &amp; portfolio</li>
-                <li>بحث عن فرص</li>
+                <li><bdi>LinkedIn</bdi></li>
+                <li><bdi>CV</bdi> et <bdi>portfolio</bdi></li>
+                <li>Recherche d’opportunités</li>
               </ul>
             </article>
           </div>
 
-          <div class="scope-note">كل مشروع يلقى scope وtechnologies خاصين به، ويتم تحديدهم قبل البدء.</div>
+          <div class="scope-note">كل مشروع يلقى <bdi>périmètre</bdi> و<bdi>technologies</bdi> خاصين به، ويتم تحديدهم قبل البدء.</div>
         </div>
       </section>
 
@@ -238,69 +243,13 @@
         <div class="container">
           <div class="section-heading">
             <span class="eyebrow">02 / TECH STACK</span>
-            <h2>التقنيات اللي رح نستخدمها أثناء التربص.</h2>
+            <!-- NEEDS REVIEW: Darja copy -->
+            <h2>التقنيات اللي باش تتقنها</h2>
+            <!-- NEEDS REVIEW: Darja copy -->
+            <p class="tech-subtitle">من الـ <bdi>frontend</bdi> للـ <bdi>backend</bdi> وقاعدة البيانات، نخدمو بتقنيات حديثة ومطلوبة في السوق.</p>
           </div>
-
-          <div class="tech-grid">
-            <article class="tech-card">
-              <h3>Frontend</h3>
-              <div class="tech-badges">
-                <span>React.js</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-            </article>
-
-            <article class="tech-card">
-              <h3>Backend</h3>
-              <div class="tech-badges">
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>REST API</span>
-              </div>
-            </article>
-
-            <article class="tech-card">
-              <h3>Base de données</h3>
-              <div class="tech-badges">
-                <span>PostgreSQL</span>
-                <span>SQL</span>
-              </div>
-            </article>
-
-            <article class="tech-card">
-              <h3>Mobile</h3>
-              <div class="tech-badges">
-                <span>React Native</span>
-                <span>Mobile UI</span>
-              </div>
-            </article>
-
-            <article class="tech-card">
-              <h3>AI &amp; tools</h3>
-              <div class="tech-badges">
-                <span>AI</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Testing</span>
-              </div>
-            </article>
-          </div>
-
-          <div class="tech-logos" aria-label="Technologies utilisées durant le stage">
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/react/2f6feb" alt="React logo" loading="lazy" /><span>React</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/nodedotjs/2f6feb" alt="Node.js logo" loading="lazy" /><span>Node.js</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/javascript/2f6feb" alt="JavaScript logo" loading="lazy" /><span>JavaScript</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/html5/2f6feb" alt="HTML5 logo" loading="lazy" /><span>HTML5</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/css3/2f6feb" alt="CSS3 logo" loading="lazy" /><span>CSS3</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/postgresql/2f6feb" alt="PostgreSQL logo" loading="lazy" /><span>PostgreSQL</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/github/2f6feb" alt="GitHub logo" loading="lazy" /><span>GitHub</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/react/2f6feb" alt="React Native logo" loading="lazy" /><span>React Native</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/openai/2f6feb" alt="AI logo" loading="lazy" /><span>AI</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/docker/2f6feb" alt="Docker logo" loading="lazy" /><span>Docker</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/figma/2f6feb" alt="Figma logo" loading="lazy" /><span>Figma</span></div>
-            <div class="tech-pill"><img src="https://cdn.simpleicons.org/openapiinitiative/2f6feb" alt="REST API logo" loading="lazy" /><span>REST API</span></div>
+          <div class="tech-marquee" aria-label="التقنيات المستعملة">
+            <div class="tech-marquee-track" id="techMarqueeTrack"></div>
           </div>
         </div>
       </section>
@@ -316,7 +265,7 @@
             <article class="step-card">
               <span class="step-number">01</span>
               <h3>مناقشة الفكرة</h3>
-              <p>نناقش فكرة PFE، الوضع الحالي والاحتياجات، ثم نحدد نقطة البداية المناسبة.</p>
+              <p>نناقش فكرة <bdi>PFE</bdi>، الوضع الحالي والاحتياجات، ثم نحدد نقطة البداية المناسبة.</p>
             </article>
             <article class="step-card">
               <span class="step-number">02</span>
@@ -340,33 +289,94 @@
       <section id="projects" class="section light-section">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">03 / OUR WORK</span>
+            <span class="eyebrow">04 / OUR WORK</span>
             <h2>تجارب وفعاليات من مسارنا.</h2>
           </div>
           <div class="projects-grid" id="projectsGrid"></div>
         </div>
       </section>
 
-      <section id="career-support" class="section light-section alt-bg">
-        <div class="container benefit-layout">
-          <div class="benefit-card">
-            <span class="eyebrow">03 / BEYOND THE PFE</span>
-            <h2>الـ PFE يوفى. طموحك لا.</h2>
-            <div class="career-support-box">
-              <h3>YOUR NEXT CHAPTER · FREE SUPPORT</h3>
-              <ul>
-                <li>LinkedIn profile</li>
-                <li>CV</li>
-                <li>Portfolio</li>
-                <li>Indeed / job search guidance</li>
-              </ul>
+      <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">05 / STUDENT FEEDBACK</span>
+            <!-- NEEDS REVIEW: confirm testimonials before publication -->
+            <h2>شنوّة قالو الطلبة علينا؟</h2>
+            <!-- NEEDS REVIEW: confirm testimonials before publication -->
+            <p class="testimonials-subtitle">تجارب طلبة تونسيين لقاو التوجيه اللي يلزمهم في مسار <bdi>PFE</bdi>.</p>
+          </div>
+          <div class="testimonials-marquee" aria-label="آراء الطلبة">
+            <div class="testimonials-track" id="testimonialsTrack"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="career-support" class="section light-section alt-bg about-section">
+        <div class="container about-layout">
+          <div class="about-copy">
+            <span class="eyebrow">06 / من نحن</span>
+            <h2>شريكك لبناء مسارك المهني</h2>
+            <p>نرافق الطلبة والمهنيين الشباب في مسارهم، من البحث عن تدريب أو مشروع إلى تطوير مهاراتهم عبر برامج تدريبية تلبي احتياجات السوق.</p>
+
+            <div class="about-highlights">
+              <article class="about-highlight">
+                <span class="about-highlight-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </span>
+                <div>
+                  <h3>مهمتنا</h3>
+                  <p>تسهيل الوصول إلى الفرص المهنية والمهارات المطلوبة من خلال ربط الطلبة والمرشحين بالشركات ومؤسسات التدريب.</p>
+                </div>
+              </article>
+              <article class="about-highlight">
+                <span class="about-highlight-icon about-highlight-icon-success" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false"><path d="M3 3v18h18"/><path d="m7 16 4-5 3 3 6-8"/><path d="M15 6h5v5"/></svg>
+                </span>
+                <div>
+                  <h3>رؤيتنا</h3>
+                  <p>بناء منظومة مهنية رائدة في تونس، تتيح للمواهب تطوير مهاراتها وإيجاد فرصها وبناء روابط مستدامة مع الشركات.</p>
+                </div>
+              </article>
             </div>
           </div>
 
-          <div class="benefit-card attestation-card">
-            <div class="badge-icon" aria-hidden="true">✓</div>
-            <h3>Attestation de stage</h3>
-            <p>تحصل على <bdi>attestation de stage</bdi>، حسب ترتيبات التربص المعمول بيها.</p>
+          <div class="about-values">
+            <article class="about-value-card">
+              <span class="about-value-icon about-value-icon-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 3.5a4 4 0 0 1 0 7"/></svg>
+              </span>
+              <div>
+                <h3>مدربون خبراء</h3>
+                <p>محترفون معتمدون بسنوات من الخبرة الميدانية في الشركات الكبرى.</p>
+              </div>
+            </article>
+            <article class="about-value-card">
+              <span class="about-value-icon about-value-icon-green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg>
+              </span>
+              <div>
+                <h3>مرافقة شخصية</h3>
+                <p>متابعة فردية تتكيف مع أهداف واحتياجات كل طالب من اليوم الأول حتى الاندماج.</p>
+              </div>
+            </article>
+            <article class="about-value-card">
+              <span class="about-value-icon about-value-icon-orange" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h3"/><path d="m15 18 1.5 1.5L20 16"/></svg>
+              </span>
+              <div>
+                <h3>شهادات معترف بها</h3>
+                <p>دبلومات وشهادات يقدّرها المختصون والشركات الكبرى في القطاع.</p>
+              </div>
+            </article>
+            <article class="about-value-card">
+              <span class="about-value-icon about-value-icon-purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5M16 4v5M8 14h3M13 14h3M8 17h3"/></svg>
+              </span>
+              <div>
+                <h3>مشاريع حقيقية</h3>
+                <p>تعلّم قائم على مشاريع واقعية من عالم الأعمال لتوظيف فوري.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -374,8 +384,9 @@
       <section id="faq" class="section faq-section">
         <div class="container faq-wrap">
           <div class="section-heading">
-            <span class="eyebrow">04 / GOOD QUESTIONS</span>
+            <span class="eyebrow">07 / الأسئلة المتكررة</span>
             <h2>مازال عندك سؤال؟</h2>
+            <p class="faq-intro">لقّى الإجابة على أكثر الأسئلة اللي تتعاود قبل ما تبدأ خطوتك الأولى.</p>
           </div>
           <div id="faqList" class="faq-list" aria-live="polite"></div>
         </div>
@@ -384,20 +395,18 @@
       <section id="contact" class="section contact-section">
         <div class="container contact-layout">
           <div class="contact-copy">
-            <span class="eyebrow">05 / YOUR FINAL STEP STARTS HERE</span>
+            <span class="eyebrow">08 / YOUR FINAL STEP STARTS HERE</span>
             <h2>الفكرة عندك. الخطوة الجاية معانا.</h2>
             <ul class="check-list">
               <li>من الفكرة إلى المراجعة</li>
               <li>دعم فني وكتابي واضح</li>
               <li>تحضير للنقاش النهائي</li>
             </ul>
-            <div class="price-line">750 DT · تسهيلات في الخلاص ممكنة</div>
-            <p class="fine-print">تفاصيل الخلاص تُناقش عند التواصل.</p>
           </div>
 
           <div class="contact-card">
             <h3>احجز مكانك</h3>
-            <p>لو عندك فكرة PFE أو مشروع في الطريق، نسمعها ونعطيك الاتجاه المناسب.</p>
+            <p>لو عندك فكرة <bdi>PFE</bdi> أو مشروع في الطريق، نسمعها ونعطيك الاتجاه المناسب.</p>
             <a href="" class="btn btn-primary contact-btn" target="_blank" rel="noopener noreferrer">احكيلنا على مشروعك</a>
             <div class="contact-meta">
               <a href="https://wa.me/21648106919" target="_blank" rel="noopener noreferrer">WhatsApp: +216 48 106 919</a>
@@ -413,13 +422,13 @@
       <div class="container footer-grid">
         <div>
           <a href="#home" class="brand footer-brand">
-            <img src="assets/logo/Profile picture · name · 1080×1080@1x.png" alt="شعار Final Step" class="brand-mark" />
+            <img src="assets/logo/watermark-final-step (1).png" alt="" class="brand-mark" />
             <div class="brand-text">
               <span class="brand-title">Final Step</span>
               <span class="brand-subtitle">آخر خطوة</span>
             </div>
           </a>
-          <p>نساعد الطلبة في تحويل فكرة PFE إلى مشروع واضح، قابل للتنفيذ، وقابل للتقديم بثقة.</p>
+          <p>نساعد الطلبة في تحويل فكرة <bdi>PFE</bdi> إلى مشروع واضح، قابل للتنفيذ، وقابل للتقديم بثقة.</p>
         </div>
 
         <div>
@@ -435,10 +444,30 @@
         <div>
           <h4>Social</h4>
           <ul>
-            <li><a href="https://www.instagram.com/final_step_tn/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://wa.me/21648106919" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-            <li><a href="https://www.youtube.com/@FinalStep-s2e" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            <li><a href="https://github.com/finalsteppath-code" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li>
+              <a href="https://www.instagram.com/final_step_tn/" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/21648106919" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M8.5 9.5c.3 2 2 3.7 4 4l1.4-1.3"/></svg>
+                <span>WhatsApp</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@FinalStep-s2e" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon social-icon-filled" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2a2.8 2.8 0 0 0-2-2C17.3 5.7 12 5.7 12 5.7s-5.3 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12 29 29 0 0 0 3 15.8a2.8 2.8 0 0 0 2 2c1.7.5 7 .5 7 .5s5.3 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-3.8 29 29 0 0 0-.5-3.8Z"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor" stroke="none"/></svg>
+                <span>YouTube</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/finalsteppath-code" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.2-4-2-5.5-2m11 4v-3.4a3.4 3.4 0 0 0-.9-2.6c3 0 6.1-1.5 6.1-6.5a5 5 0 0 0-1.3-3.5A4.6 4.6 0 0 0 18.3 3S17.1 2.6 14 4a13.7 13.7 0 0 0-5.9 0C5 2.6 3.8 3 3.8 3a4.6 4.6 0 0 0-.1 3.5 5 5 0 0 0-1.3 3.5c0 5 3.1 6.5 6.1 6.5a3.4 3.4 0 0 0-.9 2.6V21"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
