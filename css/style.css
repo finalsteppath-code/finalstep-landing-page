@@ -1172,20 +1172,37 @@ p {
 }
 
 .projects-grid {
+  position: relative;
+  overflow: hidden;
+  padding-block: 8px 14px;
+  direction: ltr;
+  mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+}
+
+.projects-track {
   display: flex;
-  flex-wrap: wrap;
+  width: max-content;
+  animation: projectsMarquee 48s linear infinite;
+}
+
+.projects-grid:hover .projects-track,
+.projects-grid:focus-within .projects-track {
+  animation-play-state: paused;
+}
+
+.projects-group {
+  display: flex;
   align-items: stretch;
-  justify-content: center;
   gap: 28px;
+  padding-inline-end: 28px;
+  direction: rtl;
 }
 
 .project-card {
   display: flex;
-  flex: 1 1 320px;
+  flex: 0 0 clamp(280px, 30vw, 380px);
   flex-direction: column;
-  width: 100%;
-  max-width: 400px;
-  min-width: 280px;
   background: var(--fs-white);
   border: 1px solid var(--fs-blue-100);
   border-radius: 20px;
@@ -1274,17 +1291,26 @@ p {
   }
 }
 
-@media (min-width: 1100px) {
-  .projects-grid {
-    gap: 28px;
+@keyframes projectsMarquee {
+  from {
+    transform: translateX(0);
   }
-
-  .project-card {
-    flex-basis: 320px;
+  to {
+    transform: translateX(-50%);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .projects-grid {
+    overflow-x: auto;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .projects-track {
+    animation: none;
+  }
+
   .project-card {
     animation: none;
     opacity: 1;
@@ -1332,8 +1358,71 @@ p {
   transition: transform 0.25s ease;
 }
 
+.workshop-image-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: zoom-in;
+  background: transparent;
+}
+
+.workshop-image-button:focus-visible {
+  outline: 3px solid var(--fs-blue);
+  outline-offset: -3px;
+}
+
 .workshop-card:hover .workshop-image-wrap img {
-  transform: scale(1.05);
+  transform: scale(1.12);
+}
+
+.workshop-card:hover .workshop-image-wrap,
+.workshop-image-button:focus-visible {
+  cursor: zoom-in;
+}
+
+.workshop-lightbox {
+  width: min(94vw, 1200px);
+  max-width: none;
+  max-height: 92vh;
+  padding: 48px 18px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.96);
+}
+
+.workshop-lightbox::backdrop {
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+.workshop-lightbox-image {
+  display: block;
+  width: 100%;
+  max-height: calc(92vh - 72px);
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.workshop-lightbox-close {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 14px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--fs-white);
+  color: var(--fs-navy);
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.workshop-lightbox-close:focus-visible {
+  outline: 3px solid var(--fs-cyan);
+  outline-offset: 3px;
 }
 
 .workshop-index {

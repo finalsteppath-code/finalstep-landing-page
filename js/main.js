@@ -23,7 +23,7 @@ const translations = {
       ['إذا عندي فكرة فقط، نقدر نتواصل؟', 'أكيد. حتى فكرة بسيطة يمكن يبدأ منها النقاش وتحديد الخطوة المناسبة قبل التطوير.'],
       ['شنو التقنيات اللي نستخدمها؟', 'حسب المشروع، ممكن نستخدم React.js، Node.js/Express.js، PostgreSQL، React Native، وAI عند الملاءمة.'],
       ['هل دعم career support مجاني؟', 'نعم، الدعم المهني مجاني، ويشمل LinkedIn، CV، portfolio، والمساعدة في البحث عن فرص العمل.'],
-      ['هل توجد attestation de stage؟', 'نعم، Final Step توفر attestation de stage، حسب ترتيبات التربص المعمول بيها.'],
+      ['هل توفّر Final Step شهادة تربّص؟', 'دبلومات وشهادات يقدّرها المختصون والشركات الكبرى في القطاع.'],
       ['كيف نبدأ؟', 'تقدر تملي نموذج ما قبل التسجيل أو تتواصل معنا مباشرة، ومن ثم نحدد الخطوات المناسبة.']
     ]
   },
@@ -104,7 +104,7 @@ const sectionTranslations = {
     aboutTitle: 'شريكك لبناء مسارك المهني',
     aboutIntro: 'نرافق الطلبة والمهنيين الشباب في مسارهم، من البحث عن تدريب أو مشروع إلى تطوير مهاراتهم عبر برامج تدريبية تلبي احتياجات السوق.',
     aboutHighlights: [['مهمتنا', 'تسهيل الوصول إلى الفرص المهنية والمهارات المطلوبة من خلال ربط الطلبة والمرشحين بالشركات ومؤسسات التدريب.'], ['رؤيتنا', 'بناء منظومة مهنية رائدة في تونس، تتيح للمواهب تطوير مهاراتها وإيجاد فرصها وبناء روابط مستدامة مع الشركات.']],
-    aboutValues: [['مدربون خبراء', 'محترفون معتمدون بسنوات من الخبرة الميدانية في الشركات الكبرى.'], ['مرافقة شخصية', 'متابعة فردية تتكيف مع أهداف واحتياجات كل طالب من اليوم الأول حتى الاندماج.'], ['شهادات معترف بها', 'دبلومات وشهادات يقدّرها المختصون والشركات الكبرى في القطاع.'], ['مشاريع حقيقية', 'تعلّم قائم على مشاريع واقعية من عالم الأعمال لتوظيف فوري.']],
+    aboutValues: [['مدربون خبراء', 'محترفون معتمدون بسنوات من الخبرة الميدانية في الشركات الكبرى.'], ['مرافقة شخصية', 'متابعة فردية تتكيف مع أهداف واحتياجات كل طالب من اليوم الأول حتى الاندماج.'], ['دبلومات وشهادات', 'يقدّرها المختصون والشركات الكبرى في القطاع.'], ['مشاريع حقيقية', 'تعلّم قائم على مشاريع واقعية من عالم الأعمال لتوظيف فوري.']],
     contactChecks: ['من الفكرة إلى المراجعة', 'تكوين في Web/Mobile Development موجّه لمشروعك.', 'تحضير للنقاش النهائي'],
     contactText: 'لو عندك فكرة PFE أو مشروع في الطريق، نسمعها ونعطيك الاتجاه المناسب.',
     location: 'قفصة، تونس',
@@ -115,9 +115,12 @@ const sectionTranslations = {
       ['Cogniplay', 'تطبيق Mobile يستعمل الألعاب وAI للتوعية ومتابعة مؤشرات مرتبطة بصحّة الذاكرة.'],
       ['ShifaTech', 'تطبيق e-santé يسهّل فهم معلومات صحّية مرتبطة بالسكري والجلطة.'],
       ['CareerPath', 'منصّة لإدارة التربّصات وتسهيل matching بين الطلبة والمؤسّسات.'],
-      ['Tracking System', 'نظام للكلّية لتنظيم الغيابات والرزنامة والأقسام والمتابعة الإدارية.']
+      ['Tracking System', 'نظام للكلّية لتنظيم الغيابات والرزنامة والأقسام والمتابعة الإدارية.'],
+      ['Voice2Work', 'منصّة SaaS لشركات تصليح الأجهزة فيها AI scheduling وتقارير بالصوت.'],
+      ['Almindhar', 'منصّة عقارية تونسية للشراء والكراء والبيع، مع dashboards للوكالات.'],
+      ['Almindhar Booking', 'منصّة booking للكراء قصير المدّة في تونس: شقق وديار وفيلات.']
     ],
-    workshops: [['تكوين Arduino وIoT', 'ورشة تطبيقية حول البرمجة المضمنة وإنترنت الأشياء.'], ['ورشة التسويق الرقمي', 'جلسة تطبيقية حول أدوات وأساليب التواصل الرقمي.'], ['حصة تكوين جماعية', 'تعلّم تشاركي حول التطوير وأفضل الممارسات.'], ['ورشة تدريب تقني', 'تكوين موجّه للمشاريع ومرافقة تقنية.']],
+    workshops: [['ورشة التسويق الرقمي', 'جلسة تطبيقية حول أدوات وأساليب التواصل الرقمي.'], ['تكوين Arduino وIoT', 'ورشة تطبيقية حول البرمجة المضمنة وإنترنت الأشياء.'], ['حصة تكوين جماعية', 'تعلّم تشاركي حول التطوير وأفضل الممارسات.'], ['ورشة تدريب تقني', 'تكوين موجّه للمشاريع ومرافقة تقنية.']],
     testimonials: [['أمل بن عمار', 'المرافقة خلاتني نفهم مشروعي خير ونتقدم بمنهج واضح.'], ['محمد العياري', 'من تحليل الفكرة للعرض النهائي، كل مرحلة كانت واضحة وبسيطة.'], ['ريم الجبالي', 'عجبتني برشا التنظيم والمتابعة، وولّى عندي هيكل واضح للتقرير.'], ['ياسين بن سالم', 'الدعم التقني والتفسيرات البسيطة عطاوني ثقة أكبر قبل المناقشة.']]
   },
   fr: {
@@ -129,7 +132,7 @@ const sectionTranslations = {
     aboutEyebrow: '06 / À PROPOS', aboutTitle: 'Votre partenaire pour construire votre parcours professionnel', aboutIntro: 'Nous accompagnons les étudiants et les jeunes professionnels, de la recherche d’un stage ou d’un projet au développement de compétences adaptées au marché.',
     aboutHighlights: [['Notre mission', 'Faciliter l’accès aux opportunités et aux compétences en reliant étudiants, candidats, entreprises et organismes de formation.'], ['Notre vision', 'Construire un écosystème professionnel de référence en Tunisie, où les talents développent leurs compétences et leurs opportunités.']], aboutValues: [['Formateurs experts', 'Des professionnels expérimentés, issus du terrain et des grandes entreprises.'], ['Accompagnement personnalisé', 'Un suivi adapté aux objectifs et aux besoins de chaque étudiant.'], ['Certifications reconnues', 'Des diplômes et certifications valorisés par les spécialistes et les entreprises.'], ['Projets réels', 'Un apprentissage basé sur des projets concrets pour favoriser l’employabilité.']],
     contactChecks: ['De l’idée à la révision', 'Formation en Web/Mobile Development orientée vers votre projet.', 'Préparation à la soutenance finale'], contactText: 'Vous avez une idée de PFE ou un projet en cours ? Parlons-en pour vous orienter.', location: 'Gafsa, Tunisie', footerDescription: 'Nous aidons les étudiants à transformer leur idée de PFE en un projet clair, réalisable et présentable avec confiance.', footerSections: 'Sections', footerLinks: ['Services', 'Technologies', 'Fonctionnement', 'How We Are', 'À propos', 'Questions fréquentes'],
-    projects: [['Cogniplay', 'Application Mobile utilisant les jeux et l’IA pour sensibiliser et suivre des indicateurs liés à la mémoire.'], ['ShifaTech', 'Application e-santé qui aide à mieux comprendre des informations liées au diabète et à l’AVC.'], ['CareerPath', 'Plateforme de gestion des stages avec matching entre étudiants et entreprises.'], ['Tracking System', 'Système pour faculté qui organise absences, emplois du temps, départements et suivi administratif.']], workshops: [['Formation Arduino & IoT', 'Atelier pratique autour de la programmation embarquée et de l’Internet des objets.'], ['Workshop Digital Marketing', 'Mise en pratique des outils et méthodes de communication digitale.'], ['Séance de classe & formation', 'Apprentissage collaboratif autour du développement et des bonnes pratiques.'], ['Atelier de coaching technique', 'Formation orientée projet et accompagnement technique.']], testimonials: [['Amel Ben Ammar', 'L’accompagnement m’a aidée à avancer avec une méthode claire et plus de confiance.'], ['Mohamed Ayari', 'Chaque étape, de l’analyse à la présentation, était expliquée simplement.'], ['Rym Jebali', 'J’ai apprécié l’organisation et le suivi, avec une structure claire pour mon rapport.'], ['Yassine Ben Salem', 'Le support technique m’a aidé à résoudre les problèmes avec plus de confiance.']]
+    projects: [['Cogniplay', 'Application Mobile utilisant les jeux et l’IA pour sensibiliser et suivre des indicateurs liés à la mémoire.'], ['ShifaTech', 'Application e-santé qui aide à mieux comprendre des informations liées au diabète et à l’AVC.'], ['CareerPath', 'Plateforme de gestion des stages avec matching entre étudiants et entreprises.'], ['Tracking System', 'Système pour faculté qui organise absences, emplois du temps, départements et suivi administratif.'], ['Voice2Work', 'Plateforme SaaS pour les entreprises de réparation avec AI scheduling et rapports vocaux.'], ['Almindhar', 'Plateforme immobilière tunisienne pour acheter, louer et vendre, avec dashboards pour les agences.'], ['Almindhar Booking', 'Plateforme de booking pour la location courte durée en Tunisie : appartements, maisons et villas.']], workshops: [['Workshop Digital Marketing', 'Mise en pratique des outils et méthodes de communication digitale.'], ['Formation Arduino & IoT', 'Atelier pratique autour de la programmation embarquée et de l’Internet des objets.'], ['Séance de classe & formation', 'Apprentissage collaboratif autour du développement et des bonnes pratiques.'], ['Atelier de coaching technique', 'Formation orientée projet et accompagnement technique.']], testimonials: [['Amel Ben Ammar', 'L’accompagnement m’a aidée à avancer avec une méthode claire et plus de confiance.'], ['Mohamed Ayari', 'Chaque étape, de l’analyse à la présentation, était expliquée simplement.'], ['Rym Jebali', 'J’ai apprécié l’organisation et le suivi, avec une structure claire pour mon rapport.'], ['Yassine Ben Salem', 'Le support technique m’a aidé à résoudre les problèmes avec plus de confiance.']]
   },
   en: {
     trust: ['From idea to defense', 'Your project, your path, your choice', 'We clarify every step'],     servicesEyebrow: '01 / THE PFE PACK', servicesTitle: 'Everything you need, in one clear path.', servicesIntro: 'Web/Mobile Development training focused on your PFE project.',
@@ -138,7 +141,7 @@ const sectionTranslations = {
     stepsEyebrow: '03 / HOW IT WORKS', stepsTitle: 'Four steps. You always know what comes next.', steps: [['Discuss the idea', 'We discuss your PFE, current situation and needs to define the right starting point.'], ['Define requirements', 'We define the requirements, project type and work plan before implementation.'], ['Develop and support', 'You learn Web/Mobile Development throughout each stage of your project, with technical support, testing and debugging.'], ['Report and defense', 'We prepare the report, presentation, demo and defense practice.']],
     aboutEyebrow: '06 / ABOUT US', aboutTitle: 'Your partner for building your professional path', aboutIntro: 'We support students and young professionals from finding a project or internship to building skills that meet market needs.', aboutHighlights: [['Our mission', 'We connect students and candidates with companies and training organizations to make opportunities and skills more accessible.'], ['Our vision', 'To build a leading professional ecosystem in Tunisia where talent develops skills, opportunities and lasting connections.']], aboutValues: [['Expert trainers', 'Experienced professionals with strong field knowledge from leading companies.'], ['Personal support', 'Individual follow-up adapted to every student’s goals and needs.'], ['Recognized certifications', 'Diplomas and certificates valued by specialists and leading companies.'], ['Real-world projects', 'Project-based learning built around practical business cases and employability.']],
     contactChecks: ['From idea to review', 'Web/Mobile Development training focused on your project.', 'Final defense preparation'], contactText: 'Have a PFE idea or a project in progress? Tell us about it and we will guide you.', location: 'Gafsa, Tunisia', footerDescription: 'We help students turn a PFE idea into a clear, achievable project they can present with confidence.', footerSections: 'Sections', footerLinks: ['Services', 'Technologies', 'How it works', 'How We Are', 'About us', 'Frequently asked questions'],
-    projects: [['Cogniplay', 'A Mobile app using games and AI to support awareness and tracking of memory-health indicators.'], ['ShifaTech', 'An e-health app that helps users understand information related to diabetes and stroke.'], ['CareerPath', 'An internship platform with matching between students and companies.'], ['Tracking System', 'A faculty system for organizing absences, schedules, departments and admin follow-up.']], workshops: [['Arduino & IoT training', 'A practical workshop on embedded programming and the Internet of Things.'], ['Digital Marketing workshop', 'A hands-on session on digital communication tools and methods.'], ['Class and training session', 'Collaborative learning focused on development and good practices.'], ['Technical coaching workshop', 'Project-focused training and technical support.']], testimonials: [['Amel Ben Ammar', 'The support helped me move forward with a clear method and more confidence.'], ['Mohamed Ayari', 'Every step, from analysis to presentation, was explained simply.'], ['Rym Jebali', 'I appreciated the organization and follow-up, especially for structuring my report.'], ['Yassine Ben Salem', 'The technical support helped me solve problems with greater confidence.']]
+    projects: [['Cogniplay', 'A Mobile app using games and AI to support awareness and tracking of memory-health indicators.'], ['ShifaTech', 'An e-health app that helps users understand information related to diabetes and stroke.'], ['CareerPath', 'An internship platform with matching between students and companies.'], ['Tracking System', 'A faculty system for organizing absences, schedules, departments and admin follow-up.'], ['Voice2Work', 'A SaaS platform for device repair companies with AI scheduling and voice reports.'], ['Almindhar', 'A Tunisian real-estate platform for buying, renting and selling, with agency dashboards.'], ['Almindhar Booking', 'A booking platform for short-term rentals in Tunisia: apartments, houses and villas.']], workshops: [['Digital Marketing workshop', 'A hands-on session on digital communication tools and methods.'], ['Arduino & IoT training', 'A practical workshop on embedded programming and the Internet of Things.'], ['Class and training session', 'Collaborative learning focused on development and good practices.'], ['Technical coaching workshop', 'Project-focused training and technical support.']], testimonials: [['Amel Ben Ammar', 'The support helped me move forward with a clear method and more confidence.'], ['Mohamed Ayari', 'Every step, from analysis to presentation, was explained simply.'], ['Rym Jebali', 'I appreciated the organization and follow-up, especially for structuring my report.'], ['Yassine Ben Salem', 'The technical support helped me solve problems with greater confidence.']]
   }
 };
 
@@ -321,24 +324,74 @@ const techStackItems = [
 
 const testimonialData = [
   {
-    name: 'Amel Ben Ammar',
+    name: 'Fourati Saif',
     avatar: 'neutral',
     quote: 'L’accompagnement m’a aidée à mieux comprendre mon projet et à avancer avec une méthode claire. Les retours m’ont donné beaucoup de confiance avant la soutenance.'
   },
   {
-    name: 'Mohamed Ayari',
+    name: 'Aziz Guiesmi',
     avatar: 'neutral',
     quote: 'De l’analyse de l’idée à la présentation finale, chaque étape était expliquée simplement. J’ai pu développer un projet <bdi>PFE</bdi> structuré et clair.'
   },
   {
-    name: 'Rym Jebali',
+    name: 'Adem Karoui',
     avatar: 'neutral',
     quote: 'J’ai surtout apprécié l’organisation et le suivi. Le rapport et la présentation avaient enfin une structure claire, et je me sentais beaucoup moins perdue.'
   },
   {
-    name: 'Yassine Ben Salem',
+    name: 'Khalil Chaabeni',
     avatar: 'neutral',
     quote: 'Le support technique et les explications simples m’ont aidé à résoudre les problèmes et à préparer une <bdi>demo</bdi> avec plus de confiance.'
+  },
+  {
+    name: 'Aymen Thabet',
+    avatar: 'neutral',
+    quote: 'L’accompagnement m’a aidé à mieux organiser mon projet et à avancer avec une méthode claire.'
+  },
+  {
+    name: 'Amir Yahyeoui',
+    avatar: 'neutral',
+    quote: 'Les explications et le suivi technique m’ont permis de progresser avec plus de confiance.'
+  },
+  {
+    name: 'Mohamed Fatmi',
+    avatar: 'neutral',
+    quote: 'Chaque étape du projet était structurée et expliquée de manière simple.'
+  },
+  {
+    name: 'Radhi Saaid',
+    avatar: 'neutral',
+    quote: 'J’ai apprécié la disponibilité et les conseils pratiques pendant l’avancement du projet.'
+  },
+  {
+    name: 'Fahmi Fourati',
+    avatar: 'neutral',
+    quote: 'Le suivi m’a aidé à clarifier mon idée et à mieux préparer la présentation finale.'
+  },
+  {
+    name: 'Malek Kaabechi',
+    avatar: 'neutral',
+    quote: 'L’organisation et les retours m’ont permis d’avancer plus sereinement sur mon projet.'
+  },
+  {
+    name: 'سارة بن عمر',
+    avatar: 'neutral',
+    quote: 'المرافقة والتنظيم ساعدوني نفهم خطوات المشروع ونقدّم بطريقة أوضح.'
+  },
+  {
+    name: 'ريم الجبالي',
+    avatar: 'neutral',
+    quote: 'التوجيه والمتابعة خلّوني نتقدّم بثقة أكبر في المشروع.'
+  },
+  {
+    name: 'آية التومي',
+    avatar: 'neutral',
+    quote: 'التفسيرات كانت واضحة وساعدتني نرتّب الفكرة والخدمة متاع المشروع.'
+  },
+  {
+    name: 'مريم العياري',
+    avatar: 'neutral',
+    quote: 'عجبتني المتابعة والنصائح العملية أثناء مراحل إنجاز المشروع.'
   }
 ];
 
@@ -367,6 +420,24 @@ const projectData = [
     description: 'نظام للكلّية يساعد على تنظيم الغيابات والرزنامة والأقسام والمتابعة الإدارية.',
     image: 'public/images/projects/tracking-system.webp',
     alt: 'واجهة نظام Tracking System لإدارة الكلية'
+  },
+  {
+    name: 'Voice2Work',
+    description: 'منصّة SaaS لشركات تصليح الأجهزة فيها AI scheduling وتقارير بالصوت.',
+    image: 'public/images/projects/voice2work.webp',
+    alt: 'واجهة منصّة Voice2Work لشركات تصليح الأجهزة'
+  },
+  {
+    name: 'Almindhar',
+    description: 'منصّة عقارية تونسية للشراء والكراء والبيع، مع dashboards مخصّصة للوكالات.',
+    image: 'public/images/projects/almindhar.webp',
+    alt: 'واجهة منصّة Almindhar العقارية التونسية'
+  },
+  {
+    name: 'Almindhar Booking',
+    description: 'منصّة booking للكراء قصير المدّة في تونس: شقق وديار وفيلات.',
+    image: 'public/images/projects/almindhar-booking.webp',
+    alt: 'واجهة منصّة Almindhar Booking للكراء قصير المدّة'
   }
 ];
 
@@ -423,8 +494,8 @@ const faqData = [
     answer: 'نعم، الدعم المهني مجاني، ويشمل LinkedIn، CV، portfolio، والمساعدة في البحث عن فرص العمل.'
   },
   {
-    question: 'هل توجد attestation de stage؟',
-    answer: 'نعم، Final Step توفر attestation de stage، حسب ترتيبات التربص المعمول بيها.'
+    question: 'هل توفّر Final Step شهادة تربّص؟',
+    answer: 'دبلومات وشهادات يقدّرها المختصون والشركات الكبرى في القطاع.'
   },
   {
     question: 'كيف نبدأ؟',
@@ -474,7 +545,7 @@ function renderTestimonials(localizedTestimonials = null) {
             </div>
             <div class="testimonial-copy">
               <div class="testimonial-heading">
-                <h3>${localizedTestimonials?.[index]?.[0] || item.name}</h3>
+                <h3>${item.name}</h3>
                 <span class="testimonial-stars" aria-label="تقييم إيجابي">★★★★★</span>
               </div>
               <p>${localizedTestimonials?.[index]?.[1] || item.quote}</p>
@@ -491,28 +562,34 @@ function renderProjects(localizedProjects = null) {
   const grid = document.getElementById('projectsGrid');
   if (!grid) return;
 
-  grid.innerHTML = projectData.map((project, index) => {
-      const localized = localizedProjects?.[index];
-      const title = localized?.[0] || project.name;
-      const caption = localized?.[1] || project.description;
-      return `
-      <article class="project-card" style="--project-index: ${index}">
-        <div class="project-cover">
-          <span class="project-browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
-          <img src="${project.image}" alt="${project.alt}" loading="lazy" width="1280" height="800" />
-        </div>
-        <div class="project-body">
-          <h3><bdi>${title}</bdi></h3>
-          <p>${caption}</p>
-        </div>
-      </article>
-      `;
-    }).join('');
+  const renderGroup = (hidden = false) => `
+    <div class="projects-group"${hidden ? ' aria-hidden="true"' : ''}>
+      ${projectData.map((project, index) => {
+        const localized = localizedProjects?.[index];
+        const title = localized?.[0] || project.name;
+        const caption = localized?.[1] || project.description;
+        return `
+        <article class="project-card" style="--project-index: ${index}">
+          <div class="project-cover">
+            <span class="project-browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+            <img src="${project.image}" alt="${project.alt}" loading="lazy" width="1280" height="800" />
+          </div>
+          <div class="project-body">
+            <h3><bdi>${title}</bdi></h3>
+            <p>${caption}</p>
+          </div>
+        </article>
+        `;
+      }).join('')}
+    </div>
+  `;
+
+  grid.innerHTML = `<div class="projects-track">${renderGroup()}${renderGroup(true)}</div>`;
 }
 
 const workshopData = [
-  { image: 'assets/img/Image1.jpg', title: 'Formation Arduino & IoT', caption: 'Atelier pratique autour de la programmation embarquée et de l’Internet des objets.' },
-  { image: 'assets/img/Image2.jpg', title: 'Workshop Digital Marketing', caption: 'Mise en pratique des outils et méthodes de communication digitale.' },
+  { image: 'assets/img/Marketing.jpg', title: 'Workshop Digital Marketing', caption: 'Mise en pratique des outils et méthodes de communication digitale.' },
+  { image: 'assets/img/Arduino.png', title: 'Formation Arduino & IoT', caption: 'Atelier pratique autour de la programmation embarquée et de l’Internet des objets.' },
   { image: 'assets/img/Image3.jpg', title: 'Séance de classe & formation', caption: 'Apprentissage collaboratif autour du développement et des bonnes pratiques.' },
   { image: 'assets/img/Image4.jpg', title: 'Atelier de coaching technique', caption: 'Formation orientée projet et accompagnement technique.' }
 ];
@@ -526,7 +603,9 @@ function renderWorkshops(localizedWorkshops = null) {
     return `
       <article class="workshop-card">
         <div class="workshop-image-wrap">
-          <img src="${workshop.image}" alt="${localized?.[0] || workshop.title}" loading="lazy" width="800" height="600" />
+          <button class="workshop-image-button" type="button" aria-label="Afficher l’image complète">
+            <img src="${workshop.image}" alt="${localized?.[0] || workshop.title}" loading="lazy" width="800" height="600" />
+          </button>
           <span class="workshop-index">0${index + 1}</span>
         </div>
         <div class="workshop-copy">
@@ -536,6 +615,37 @@ function renderWorkshops(localizedWorkshops = null) {
       </article>
     `;
   }).join('');
+}
+
+function initWorkshopLightbox() {
+  const grid = document.getElementById('workshopsGrid');
+  if (!grid) return;
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'workshop-lightbox';
+  dialog.innerHTML = `
+    <button class="workshop-lightbox-close" type="button" aria-label="Fermer">×</button>
+    <img class="workshop-lightbox-image" alt="" />
+  `;
+  document.body.appendChild(dialog);
+
+  const image = dialog.querySelector('.workshop-lightbox-image');
+  const close = () => dialog.close();
+
+  grid.addEventListener('click', (event) => {
+    const button = event.target.closest('.workshop-image-button');
+    if (!button) return;
+    const source = button.querySelector('img');
+    if (!source) return;
+    image.src = source.currentSrc || source.src;
+    image.alt = source.alt;
+    dialog.showModal();
+  });
+
+  dialog.querySelector('.workshop-lightbox-close').addEventListener('click', close);
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) close();
+  });
 }
 
 function renderFaq() {
@@ -640,6 +750,7 @@ function init() {
   setCtaLinks();
   renderTechMarquee();
   renderTestimonials();
+  initWorkshopLightbox();
 }
 
 init();
