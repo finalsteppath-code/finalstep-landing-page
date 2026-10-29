@@ -463,16 +463,16 @@ const projectData = [
 
 const instructorData = {
   ar: [
-    ['أحمد ضريف', 'مطور Full Stack ومهندس IA', 'يعاونك تحوّل فكرة الـ PFE إلى تطبيق واضح، من اختيار التقنيات وتصميم الواجهة إلى بناء الـ API وربط مكوّنات المشروع.', 'assets/membre/Ahmed.jpg'],
-    ['دلاجي ناجي', 'مطور Full Stack وIA', 'يرافقك في اختيار الحلّ المناسب لمشروعك، وتعلّم Web/Mobile Development بطريقة عملية قابلة للتطبيق والتطوير.', 'assets/membre/Naji.jpg']
+    ['أحمد ضريف', 'مطور Full Stack والويب والموبايل ومهندس ذكاء اصطناعي', 'يحوّل فكرة مشروعك إلى حلّ رقمي قابل للتنفيذ، عبر تحليل المتطلبات، تصميم تجربة المستخدم، تطوير تطبيقات الويب والموبايل، بناء الـ API، ثم دمج مكوّنات الذكاء الاصطناعي باحتراف.', 'assets/membre/Ahmed.jpg', ['هندسة البرمجيات', 'Web/Mobile Development', 'React.js وNode.js', 'React Native', 'تصميم API وقواعد البيانات', 'دمج الذكاء الاصطناعي']],
+    ['دلاجي ناجي', 'مطور Full Stack وخبير في الذكاء الاصطناعي والحلول الرقمية', 'يرافقك في اختيار المعمارية المناسبة لمشروعك وتطويره خطوة بخطوة، مع تركيز على Web/Mobile Development، دمج الذكاء الاصطناعي، جودة الكود، وتجهيز المنتج للعرض والاستعمال الحقيقي.', 'assets/membre/Naji.jpg', ['Web/Mobile Development', 'React Native', 'الذكاء الاصطناعي', 'تحليل وتصميم الحلول', 'جودة الكود ودعم المشاريع']]
   ],
   fr: [
-    ['Ahmed Dhraief', 'Développeur Full Stack & ingénieur IA', 'Il vous aide à transformer l’idée de votre PFE en application claire : choix des technologies, interface, API et intégration des composants.', 'assets/membre/Ahmed.jpg'],
-    ['Dallagi Naji', 'Développeur Full Stack & IA', 'Il vous accompagne dans le choix de la solution adaptée et dans l’apprentissage pratique du Web/Mobile Development appliqué à votre projet.', 'assets/membre/Naji.jpg']
+    ['Ahmed Dhraief', 'Développeur Full Stack Web/Mobile & ingénieur en intelligence artificielle', 'Il transforme votre idée en solution digitale concrète grâce à l’analyse des besoins, la conception UX, le développement web et mobile, la création d’API et l’intégration de composants IA.', 'assets/membre/Ahmed.jpg', ['Architecture logicielle', 'Web/Mobile Development', 'React.js & Node.js', 'React Native', 'API & bases de données', 'Intégration de l’IA']],
+    ['Dallagi Naji', 'Développeur Full Stack, IA & expert en solutions digitales', 'Il vous accompagne dans le choix de l’architecture et le développement de votre projet, avec une approche orientée Web/Mobile Development, intégration de l’IA, qualité du code et préparation d’un produit présentable.', 'assets/membre/Naji.jpg', ['Web/Mobile Development', 'React Native', 'Intelligence artificielle', 'Analyse & conception', 'Qualité du code & support projet']]
   ],
   en: [
-    ['Ahmed Dhraief', 'Full Stack Developer & AI Engineer', 'Helps you turn your PFE idea into a clear application, from technology choices and interface design to APIs and project integration.', 'assets/membre/Ahmed.jpg'],
-    ['Dallagi Naji', 'Full Stack Developer & AI', 'Guides you in choosing the right solution and learning practical Web/Mobile Development for your own project.', 'assets/membre/Naji.jpg']
+    ['Ahmed Dhraief', 'Full Stack Web/Mobile Developer & AI Engineer', 'Turns your idea into a practical digital solution through requirements analysis, UX design, web and mobile development, API creation and professional AI component integration.', 'assets/membre/Ahmed.jpg', ['Software architecture', 'Web/Mobile Development', 'React.js & Node.js', 'React Native', 'APIs & databases', 'AI integration']],
+    ['Dallagi Naji', 'Full Stack Developer, AI & Digital Solutions Expert', 'Guides you through the right architecture and development path for your project, with a focus on Web/Mobile Development, AI integration, code quality and presentation-ready products.', 'assets/membre/Naji.jpg', ['Web/Mobile Development', 'React Native', 'Artificial intelligence', 'Solution analysis & design', 'Code quality & project support']]
   ]
 };
 
@@ -482,13 +482,19 @@ function renderInstructors(language) {
 
   grid.innerHTML = (instructorData[language] || instructorData.fr)
     .map(
-      ([name, role, bio, image]) => `
+      ([name, role, bio, image, specialties]) => `
         <article class="instructor-card">
           <img src="${image}" alt="${name}" class="instructor-photo" />
-          <div>
+          <div class="instructor-content">
             <h4>${name}</h4>
             <p class="instructor-role">${role}</p>
             <p>${bio}</p>
+            <div class="instructor-specialties">
+              <span class="instructor-specialties-label">${language === 'ar' ? 'التخصصات' : language === 'fr' ? 'Spécialités' : 'Specialties'}</span>
+              <ul>
+                ${specialties.map((specialty) => `<li>${specialty}</li>`).join('')}
+              </ul>
+            </div>
           </div>
         </article>
       `

@@ -892,13 +892,20 @@ p {
 
 .instructor-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   padding: 24px;
   background: var(--fs-white);
   border: 1px solid var(--fs-blue-100);
   border-radius: 20px;
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.instructor-card:hover {
+  border-color: rgba(37, 99, 235, 0.28);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.1);
+  transform: translateY(-3px);
 }
 
 .instructor-photo {
@@ -915,6 +922,11 @@ p {
   font-size: 1.12rem;
 }
 
+.instructor-content {
+  min-width: 0;
+  flex: 1;
+}
+
 .instructor-card p {
   margin: 0;
   color: var(--fs-slate);
@@ -925,6 +937,42 @@ p {
   margin-bottom: 6px;
   color: var(--fs-blue);
   font-weight: 700;
+}
+
+.instructor-specialties {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--fs-blue-100);
+}
+
+.instructor-specialties-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--fs-navy);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.instructor-specialties ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.instructor-specialties li {
+  padding: 5px 9px;
+  border: 1px solid var(--fs-blue-100);
+  border-radius: 999px;
+  background: var(--fs-blue-50);
+  color: var(--fs-blue);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .testimonials-marquee {
