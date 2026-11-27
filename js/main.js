@@ -484,7 +484,7 @@ function renderInstructors(language) {
     .map(
       ([name, role, bio, image, specialties]) => `
         <article class="instructor-card">
-          <img src="${image}" alt="${name}" class="instructor-photo" />
+          <img src="${image}" alt="${name}" class="instructor-photo" width="400" height="400" loading="lazy" decoding="async" />
           <div class="instructor-content">
             <h4>${name}</h4>
             <p class="instructor-role">${role}</p>
@@ -567,7 +567,7 @@ function renderTestimonials(localizedTestimonials = null) {
           <article class="testimonial-card">
             <div class="testimonial-top">
               <span class="testimonial-label">FEEDBACK</span>
-              <img class="testimonial-avatar" src="public/icons/avatar-${item.avatar}.svg" alt="" aria-hidden="true" />
+              <img class="testimonial-avatar" src="public/icons/avatar-${item.avatar}.svg" alt="" aria-hidden="true" width="96" height="96" loading="lazy" decoding="async" />
             </div>
             <div class="testimonial-copy">
               <div class="testimonial-heading">
